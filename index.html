@@ -228,7 +228,7 @@
                     <button class="key" onclick="App.pressKey('0')">0</button>
                     <button class="key" onclick="App.pressKey('✓')"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></button>
                 </div>
-                <div class="bottom-hint">Hint: tanggal lahir kamu</div>
+                <div class="bottom-hint">Hint: tanggal lahir kamu (101008)</div>
             </div>
         </div>
 
@@ -300,8 +300,8 @@
                             <p style="margin-bottom: 14px; color: rgba(245,244,240,0.92);">Thank you for coming into my life and making my days a little happier yaa. I really love how you can make me laugh even from the simplest things. Honestly, I’m really happy that I got to know you and have you in my life pacal aku.</p>
                             <p style="margin-bottom: 14px; color: rgba(245,244,240,0.92);">I hope you know that I’ll always be proud of you and support you, even in the little things. So please keep being you, because that’s the person I like so much.</p>
                             <p style="margin-bottom: 14px; font-style: italic; color: #E7E2CE; text-shadow: 0 0 6px rgba(231,226,206,0.35);">Once again, happy birthday to my favorite human! Semoga tahun ini banyak banget good things yang datang ke kamu. Love youu sayangg.</p>
-                            <div style="text-align: right; font-family: 'Cinzel', serif; font-size: 9.5pt; color: rgba(231,226,206,0.75); margin-top: 15px;">
-                                With all my love,<br><span id="letter-sender" style="font-size: 12pt; color: #E7E2CE; font-weight: 500; text-shadow: 0 0 10px rgba(231,226,206,0.45);"></span>
+                            <div style="text-align: right; font-family: 'Cormorant Garamond', serif; font-size: 10pt; color: rgba(231,226,206,0.75); margin-top: 15px;">
+                                With all my love,<br><span id="letter-sender" style="font-size: 11.5pt; color: #E7E2CE; font-weight: 600; text-shadow: 0 0 10px rgba(231,226,206,0.45); font-family: 'Cormorant Garamond', serif; font-style: italic;"></span>
                             </div>
                         </div>
                     </div>
@@ -319,16 +319,16 @@
                             <div class="polaroid-img-holder"><img src="foto2.jpg" loading="lazy" alt=""></div>
                             <div class="polaroid-caption">Cool look</div>
                         </div>
-                        <div class="polaroid-frame" onclick="App.openPhotoPreview('foto3.jpg', 'Golden hour')">
+                        <div class="polaroid-frame" onclick="App.openPhotoPreview('foto3.jpg', 'My Fav Pict♡')">
                             <div class="polaroid-img-holder"><img src="foto3.jpg" loading="lazy" alt=""></div>
-                            <div class="polaroid-caption">Golden hour</div>
+                            <div class="polaroid-caption">My Fav Pict♡</div>
                         </div>
                     </div>
                 </section>
 
                 <!-- Music Player Section -->
                 <section>
-                    <h3>Our Special Playlist</h3>
+                    <h3 style="font-size: 10.5pt; letter-spacing: 1.5px; padding: 0 5px; line-height: 1.4;">Playlist That Reminds Me Of You</h3>
                     <div class="ios-player-container">
                         <div class="player-album-art" id="albumArtBox">
                             <svg id="placeholder-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E7E2CE" stroke-width="1"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
@@ -369,7 +369,14 @@
 
                 <!-- Closing Section -->
                 <section class="closing-section-box" style="border:none; text-align:center;">
-                    <p style="font-family:'Cormorant Garamond',serif; font-size:12pt; color:#E7E2CE; font-style:italic; line-height:1.8; margin-bottom:25px; text-shadow: 0 0 8px rgba(231,226,206,0.35);">"Terima kasih sudah berjalan sejauh ini bersamaku. Di setiap detak waktu dan sudut semesta, kamulah keindahan yang paling aku syukuri..."</p>
+                    <div style="font-family:'Cormorant Garamond',serif; font-size:11pt; color:#E7E2CE; font-style:italic; line-height:1.6; margin-bottom:25px; text-shadow: 0 0 8px rgba(231,226,206,0.35); padding: 0 10px;">
+                        <p style="margin-bottom: 12px;">That’s all from me before I start yapping again hheheee</p>
+                        <p style="margin-bottom: 16px;">Once againn happy birthday my favorite boy! Semoga selalu bahagia and remember you’ll always have me cheering for youu</p>
+                        <p>
+                            Love,<br>
+                            <span style="font-weight: 600; font-size: 11.5pt;">the girl who’s lucky to have you🫶🏻</span>
+                        </p>
+                    </div>
                     <button class="btn-surprise" onclick="App.toggleClosingBox(true)">Open Final Surprise</button>
                 </section>
             </div>
@@ -410,7 +417,7 @@
         const App = (() => {
             const urlParams = new URLSearchParams(window.location.search);
             const recipientName = urlParams.get('to') || 'Bintang';
-            const senderName = urlParams.get('from') || 'Pacar kamu yang baik banget';
+            const senderName = urlParams.get('from') || 'Pacar Kamu Yang Imut Banget';
             const starImages = ['1-loading-bintang-1.png', '1-loading-bintang-2.png', '1-loading-bintang-3.png', '1-loading-bintang-4.png', '1-loading-bintang-5.png'];
             const assets = ['1-loading-kaset.png', 'kado-tutup.png', 'kado-kotak.png', 'planet1.png', 'planet2.png', 'planet3.png', 'planet4.png', 'planet5.png', 'planet6.png', 'planet7.png', 'planet8.png', 'planet9.png', 'planet10.png', 'foto1.jpg', 'foto2.jpg', 'foto3.jpg', 'thumbnail.png', 'Honey.jpg', 'Sweet Boy.jpg', 'Perfectly Mine.jpg', 'Boy Pablo - Honey.mp3', 'Malcolm Todd - Sweet Boy.mp3', 'Teo Glacier - Perfectly Mine.mp3'];
 
